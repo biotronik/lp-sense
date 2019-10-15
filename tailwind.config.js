@@ -31,6 +31,9 @@ module.exports = {
           blueGrey: "#3b5c7b",
           aqua: "#00afac"
         }
+      },
+      spacing: {
+        500: "500px"
       }
     }
   },
