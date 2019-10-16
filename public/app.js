@@ -34,7 +34,7 @@ tl1
     "=-.8"
   )
   .from(
-    "#headline-3",
+    "#cta-button",
     1,
     {
       ease: Power4.easeOut,
