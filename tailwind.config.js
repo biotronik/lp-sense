@@ -34,6 +34,9 @@ module.exports = {
       },
       spacing: {
         500: "500px"
+      },
+      inset: {
+        "image-1": "-300px"
       }
     }
   },
