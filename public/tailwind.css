@@ -1,3 +1,18 @@
 @tailwind base;
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 @tailwind components;
 @tailwind utilities;
+
+.image-1 {
+  top: -300px;
+}
+
+@media (max-width: 1024px) {
+  .image-1 {
+    top: 0px;
+  }
+}

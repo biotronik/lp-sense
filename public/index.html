@@ -66,6 +66,10 @@
       href="https://res.cloudinary.com/binc/image/upload/v1536882288/web/apple-touch-icon-180x180.png"
     />
     <!-- Import Stylesheet -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/build/tailwind.css" />
     <title>
       SENSE Study | DX demonstrates superiority to single-chamber implantable
@@ -74,9 +78,9 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="bg-white">
+    <header class="bg-white shadow">
       <div
-        class="max-w-6xl mx-auto text-center md:h-24 h-20 flex justify-center items-center"
+        class="max-w-6xl mx-auto text-center md:h-24 h-20 flex justify-between items-center"
       >
         <svg
           class="h-16"
@@ -105,6 +109,39 @@
             d="M21.3 31.4c-1.6 1.1-3.2 1.6-5.2 1.8v-6h8.4c-.6 1.7-1.6 3.1-3.2 4.2zm-11.6 0c-1.6-1.1-2.6-2.5-3.3-4.3h8.5v6c-2 0-3.6-.6-5.2-1.7zM19.2 19.6c.3-.5.8-.8 1.4-.8.7 0 1.2.3 1.5.8.3.5.4 1.1.4 1.7-.1 1.1-.6 2.4-1.9 2.4-.6-.1-1-.3-1.3-.8-.3-.5-.4-1-.5-1.6 0-.7.1-1.2.4-1.7zm-1 4.1c.6.7 1.4 1 2.4 1.1 2.1 0 3.4-1.6 3.5-3.6 0-1-.3-1.9-1-2.6-.6-.7-1.5-1.1-2.5-1.1s-1.8.4-2.5 1.1c-.7.7-1 1.6-1 2.6.1 1 .4 1.8 1.1 2.5zm-8.6-3.1v-1.7h1.6c.5 0 .9.3.9.8 0 .3-.1.5-.3.6-.2.2-.4.2-.7.3H9.6zm0 3.1v-2h1.6c.6 0 1.1.4 1.1 1 0 .7-.5 1.1-1.2 1.1H9.6v-.1zm-1.5-5.9v6.9h3.4c1.4 0 2.5-.7 2.5-2 0-1-.8-1.6-1.4-1.7.4-.1 1.1-.6 1.1-1.5 0-1.2-.9-1.7-2-1.7H8.1zM6 26c-.3-.9-.4-1.8-.4-2.6 0-3.4 1.6-6.5 4.4-8.3 1.5-1 3-1.4 4.8-1.5v11.2h1.3V13.5c1.8.1 3.3.5 4.8 1.5 2.9 1.9 4.4 5 4.4 8.4 0 .9-.1 1.8-.4 2.6H6z"
           />
         </svg>
+        <div class="flex items-center -mx-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="text-crm-green h-6 w-6 fill-current"
+            viewBox="0 0 277.4 266.1"
+          >
+            <path d="M100.7 18.7C43.3 30 0 80.5 0 141.2 0 210.1 55.9 266 124.8
+            266s124.8-55.9 124.8-124.8c0-65.3-50.1-118.9-114-124.4l12 12 6.7
+            6.7-6.7 6.7-6.3 6.3c44.1 7.8 77.7 46.4 77.7 92.7 0 52-42.2 94.2-94.2
+            94.2s-94.2-42.2-94.2-94.2c0-43.7 29.7-80.4
+            70.1-91.1v19.5l34.9-34.9L100.7 0v18.7z" fill-rule="evenodd"
+            clip-rule="evenodd" "/><path d="M63.8 121.3c-3.9-5.4-2.6-12.8
+            2.7-16.7 5.4-3.9 12.8-2.6 16.7 2.7l40 39.3c16.6-21.4 106-84.1
+            148.8-88.9 3.1 5.8.9 13.1-4.9 16.2-42.2 22.6-80.6 49.6-107.9
+            79.6-5.3 5.9-10.1 11.7-14.3 17.4-4.2 5.7-8 11.7-11.4 17.9-.8 1.5-2
+            2.9-3.5 4-5.4 3.9-12.8 2.6-16.7-2.7l-49.5-68.8z" "/>
+            <path
+              d="M67 118.9l49.5 68.7c1.3 1.8 3.2 2.9 5.2 3.2 2 .3 4.1-.1 5.9-1.4.7-.5 1.3-1.1 1.8-1.8.1-.1.2-.2.3-.4.1-.1.1-.2.2-.4l1.9-3.5h.1c1.9-3.3 4-6.6 6.2-9.8.8-1.1 1.4-2 1.7-2.5.3-.5.9-1.3 1.7-2.4v-.1c3.2-4.3 6.6-8.6 10.1-12.8.3-.3 1-1.1 2.2-2.5 1-1.1 1.8-2 2.2-2.5l.1-.1c19.9-21.8 45.5-42 74.2-60.1 5.6-3.5 11.3-7 17-10.3 5.7-3.3 11.5-6.5 17.6-9.8 1.9-1 3.3-2.8 3.9-4.7.3-1.1.4-2.3.3-3.5-30.6 5.1-82.2 36.8-115.2 62.1-6.7 5.1-12.6 9.9-17.3 14.2-4.6 4.2-8.2 7.8-10.4 10.6l-2.8 3.5-3.2-3.1-40-39.3-.4-.5c-1.3-1.8-3.2-2.9-5.2-3.2-2-.3-4.1.1-5.9 1.4-1.8 1.3-2.9 3.2-3.2 5.2-.2 1.9.2 4.1 1.5 5.8zm-6.4 4.8c-2.6-3.6-3.5-7.9-2.8-11.9.7-4 2.8-7.8 6.4-10.4 3.6-2.6 7.8-3.4 11.9-2.8 3.9.6 7.6 2.7 10.1 6.1l36.7 36.1c2.3-2.5 5.2-5.3 8.5-8.3 5-4.5 11-9.4 17.8-14.6 35-26.8 90.7-60.6 122.3-64.1l2.8-.3 1.2 2.4c2.1 3.9 2.4 8.2 1.2 12.1-1.2 3.9-3.9 7.3-7.7 9.4-5.8 3.1-11.6 6.3-17.4 9.7-5.7 3.3-11.3 6.7-16.8 10.2-28.1 17.8-53.2 37.6-72.6 58.9l-.1.1c-.9 1-1.6 1.8-2.1 2.3-.2.3-.9 1.1-2.1 2.4-3.6 4.2-6.9 8.3-9.7 12.2v.1c-.3.4-.9 1.2-1.7 2.4-.8 1.1-1.3 1.9-1.7 2.4-2.7 4.1-5.3 8.3-7.8 12.7l-1.9 3.5-.5-.3c-.7.7-1.4 1.4-2.3 2-3.6 2.6-7.8 3.4-11.9 2.8-4-.7-7.8-2.8-10.4-6.4l-49.4-68.7z"
+              fill="#fff"
+            />
+          </svg>
+
+          <div class="px-2">Tel: +1 800-547-0394</div>
+          <div class="px-2">
+            <a href=""
+              ><button
+                class="py-2 px-4 bg-crm-green text-base text-white hover:bg-green-500 font-semibold uppercase tracking-wide rounded"
+              >
+                Contact Us
+              </button></a
+            >
+          </div>
+        </div>
       </div>
     </header>
     <!-- End of Header -->
@@ -112,23 +149,22 @@
     <!-- Hero Section  -->
     <section
       id="hero-section"
-      style="background-image: linear-gradient(180deg,rgba(46,47,58,.80),rgba(46,47,58,.80)), url(https://res.cloudinary.com/binc/image/upload/c_scale,w_600/v1571161091/web/sense/BIO18931_Arzt_und_Patient.jpg); background-size: cover; background-repeat: no-repeat; background-position: 0 0,0 50%"
+      style="background-image: linear-gradient(180deg,rgba(255,255,255,.40),rgba(255,255,255,.40)), url(https://res.cloudinary.com/binc/image/upload/c_scale,w_600/v1571161091/web/sense/BIO18931_Arzt_und_Patient.jpg); background-size: cover; background-repeat: no-repeat; background-position: 0 0,0 50%"
     >
       <div class="max-w-6xl mx-auto p-4 flex flex-col justify-center">
-        <div class="md:flex -mx-2 md:h-500 py-6">
+        <div class="md:flex -mx-2  py-6">
           <div class="flex flex-col justify-center md:w-2/3 px-2">
             <div>
               <h1
                 id="headline-1"
-                class="text-left text-4xl md:text-5xl text-crm-green font-black uppercase tracking-wide leading-tight"
-                style="text-shadow: 2px 2px 3px rgba(255,255,255,.9);"
+                class="text-left text-4xl md:text-5xl text-crm-green font-black leading-tight"
               >
                 For ICD Patients, <br />
                 DX Makes SENSE
               </h1>
               <h2
                 id="headline-2"
-                class="text-left text-xl md:text-3xl text-white leading-tight mt-6"
+                class="text-left text-xl md:text-2xl text-crm-green leading-tight mt-6"
               >
                 DX demonstrates superiority to single-chamber implantable
                 cardiac defibrillators in the SENSE Trial<sup>1</sup>
@@ -144,80 +180,26 @@
             </div>
           </div>
           <div class="flex flex-col justify-center md:w-1/3 px-2 mt-8 md:mt-0">
-            <div class="bg-crm-green p-2 rounded">
-              <script
-                src="https://fast.wistia.com/embed/medias/ovchmr321a.jsonp"
-                async
-              ></script
-              ><script
-                src="https://fast.wistia.com/assets/external/E-v1.js"
-                async
-              ></script>
-              <div
-                class="wistia_responsive_padding shadow-md"
-                style="padding:100.0% 0 0 0;position:relative;"
-              >
-                <div
-                  class="wistia_responsive_wrapper "
-                  style="height:100%;left:0;position:absolute;top:0;width:100%;"
-                >
-                  <div
-                    class="wistia_embed wistia_async_ovchmr321a videoFoam=true "
-                    style="height:100%;position:relative;width:100%"
-                  >
-                    <div
-                      class="wistia_swatch"
-                      style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"
-                    >
-                      <img
-                        src="https://fast.wistia.com/embed/medias/ovchmr321a/swatch"
-                        style="filter:blur(5px);height:100%;object-fit:contain;width:100%;"
-                        alt=""
-                        aria-hidden="true"
-                        onload="this.parentNode.style.opacity=1;"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End of Hero Section -->
-
-    <!-- Download Presentation Section -->
-    <section id="features" class="bg-white">
-      <div class="max-w-6xl mx-auto p-4 py-20">
-        <h2
-          class="text-center text-2xl md:text-4xl text-crm-green uppercase font-bold tracking-wide"
-        >
-          Start Making Sense
-        </h2>
-        <div
-          id="divider"
-          class="w-64 h-px my-8 mb-12 mx-auto bg-gray-600"
-        ></div>
-
-        <div class="md:flex -mx-2">
-          <div class="md:w-1/2 lg:w-1/3 px-2">
             <div
-              class="p-4 py-6 bg-gray-200 rounded mt-6 md:mt-0"
-              style="min-height: 428px;"
+              class="p-4 py-6 rounded mt-6 md:mt-0"
+              style="min-height: 428px; background-color: rgb(88, 92, 119, .3);"
             >
               <h3
-                class="text-center text-lg md:text-base text-gray-700 font-bold uppercase tracking-wide"
+                class="text-left text-base md:text-2xl text-white font-semibold"
               >
-                Download Presentation
+                Start Making SENSE
               </h3>
               <h3
-                class="mt-2 text-left text-lg md:text-sm text-gray-700 font-base"
+                class="mt-2 text-left text-lg md:text-sm text-white font-base"
               >
-                Share the SENSE presentation with your peers
+                Fill out the form below to receive the<br /><span
+                  class="text-crm-green font-black tracking-wide"
+                  >SENSE presentation</span
+                >
+                to share with your peers
               </h3>
               <h5
-                class="mb-2 text-left text-sm md:text-xs text-gray-500 font-semibold"
+                class="mb-2 text-left text-sm md:text-xs text-white font-semibold"
               >
                 (4x3 unbranded slide deck)
               </h5>
@@ -232,24 +214,44 @@
               </script>
             </div>
           </div>
-          <div class="md:w-1/2 lg:w-2/3 px-2">
+        </div>
+      </div>
+    </section>
+    <!-- End of Hero Section -->
+
+    <!-- Download Presentation Section -->
+    <section id="features" class="bg-white">
+      <div class="max-w-6xl mx-auto p-4 py-20">
+        <div class="lg:flex -mx-2">
+          <div class="relative md:w-1/2 px-2">
             <picture>
               <source
                 media="(min-width: 768px)"
-                srcset="https://res.cloudinary.com/binc/image/upload/c_scale,w_350/v1571161022/web/sense/Zeichenfl%C3%A4che_15_Kopie_8-8.png"
+                srcset="https://res.cloudinary.com/binc/image/upload/c_scale,w_600/v1571161022/web/sense/Zeichenfl%C3%A4che_15_Kopie_8-8.png"
               />
               <img
-                id="bobby"
-                class="object-cover float-right hidden lg:block"
+                class="relative lg:absolute object-cover image-1"
                 src="https://fivethirtyeight.com/wp-content/uploads/2014/04/2711.jpg?w=575"
                 alt="image"
               />
             </picture>
+          </div>
+          <div class="md:w-1/2px-2">
             <h2
-              class="mt-6 md:mt-0 text-left text-2xl md:text-2xl text-gray-700 font-semibold"
+              class="mt-6 md:mt-0 text-left text-2xl md:text-2xl text-crm-green font-bold uppercase tracking-wide"
             >
-              What's in this Presentation?
+              Data Matters
             </h2>
+            <h3
+              class="mt-6 md:mt-0 text-left text-2xl md:text-xl text-crm-green font-base"
+            >
+              BIOTRONIK's DX System Proven Superior
+            </h3>
+            <p
+              class="mt-6 md:mt-0 text-left text-2xl md:text-base text-gray-700 font-base"
+            >
+              <b>Watch this short promotional video</b> to see a few highlights.
+            </p>
             <ul class="mt-6">
               <li id="feature-1" class="mb-8 flex">
                 <div>
