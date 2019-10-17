@@ -44,15 +44,73 @@ tl1
     "=-.8"
   );
 
-// Bobby Animation
+// Infographic Animation
 let tl2 = new TimelineMax();
-tl2.from("#image", 0.5, { opacity: 0, scale: 0 });
+tl2
+  .from("#dx-leads", 2, {
+    opacity: 0,
+    scaleY: 0,
+    x: -100,
+    ease: Power3.easeInOut
+  })
+  .from("#claim-1", 2, {
+    opacity: 0,
+    y: -20,
+    ease: Power3.easeInOut
+  })
+  .from("#claim-2", 2, {
+    opacity: 0,
+    y: -20,
+    ease: Power3.easeInOut
+  })
+  .from("#data-point-1", 1, {
+    scale: 0,
+    ease: Power3.easeInOut
+  })
+  .from("#data-point-2", 1, {
+    scale: 0,
+    ease: Power3.easeInOut
+  })
+  .from("#data-point-3", 1, {
+    scale: 0,
+    ease: Power3.easeInOut
+  })
+  .from("#data-point-4", 1, {
+    opacity: 0,
+    scaleX: 0,
+    ease: Power3.easeInOut
+  })
+  .from(
+    "#data-point-5",
+    1,
+    {
+      opacity: 0,
+      scaleX: 0,
+      ease: Power3.easeInOut
+    },
+    "=-1"
+  );
+
 let scene1 = new ScrollMagic.Scene({
-  triggerElement: "#bobby",
-  triggerHook: 0.5,
+  triggerElement: "#infographic",
+  triggerHook: 0,
   offset: 0,
-  duration: 300
+  duration: 1500
 })
+  .setPin("#infographic")
   .setTween(tl2)
-  // .addIndicators()
+  .addIndicators()
   .addTo(controller);
+
+// Bobby Animation
+// let tl2 = new TimelineMax();
+// tl2.from("#image", 0.5, { opacity: 0, scale: 0 });
+// let scene1 = new ScrollMagic.Scene({
+//   triggerElement: "#bobby",
+//   triggerHook: 0.5,
+//   offset: 0,
+//   duration: 300
+// })
+//   .setTween(tl2)
+//   // .addIndicators()
+//   .addTo(controller);
