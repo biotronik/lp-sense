@@ -4,6 +4,13 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+
 @tailwind components;
 @tailwind utilities;
 

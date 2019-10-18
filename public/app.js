@@ -1,3 +1,8 @@
+const mainbody = document.querySelector("#mainBody");
+const headerHeight = document.body.querySelector("#header").offsetHeight;
+
+mainbody.style.paddingTop = headerHeight + "px";
+
 // Scroll Magic Controller & GSAP TimelineMax Initialization
 let controller = new ScrollMagic.Controller();
 
