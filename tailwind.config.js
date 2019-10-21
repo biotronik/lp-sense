@@ -35,8 +35,16 @@ module.exports = {
       spacing: {
         500: "500px"
       },
+      minHeight: {
+        "500": "500px",
+        "1/4": "25%",
+        "1/2": "50%",
+        "3/4": "75%",
+        full: "100%"
+      },
       inset: {
-        "image-1": "-300px"
+        "image-1": "-300px",
+        "image-2": "-200px"
       }
     }
   },

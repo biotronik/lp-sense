@@ -3,6 +3,17 @@ const headerHeight = document.body.querySelector("#header").offsetHeight;
 
 mainbody.style.paddingTop = headerHeight + "px";
 
+function fixNav() {
+  if (window.scrollY >= headerHeight) {
+    document.body.classList.add("fixed-nav");
+    document.body.querySelector("#navBar").classList.remove("items-center");
+  } else {
+    document.body.classList.remove("fixed-nav");
+    document.body.querySelector("#navBar").classList.add("items-center");
+  }
+}
+window.addEventListener("scroll", fixNav);
+
 // Scroll Magic Controller & GSAP TimelineMax Initialization
 let controller = new ScrollMagic.Controller();
 
@@ -104,7 +115,7 @@ let scene1 = new ScrollMagic.Scene({
 })
   .setPin("#infographic")
   .setTween(tl2)
-  .addIndicators()
+  // .addIndicators()
   .addTo(controller);
 
 // Bobby Animation
