@@ -35,6 +35,9 @@ module.exports = {
       spacing: {
         500: "500px"
       },
+      maxWidth: {
+        none: "none"
+      },
       minHeight: {
         "500": "500px",
         "1/4": "25%",
@@ -44,7 +47,8 @@ module.exports = {
       },
       inset: {
         "image-1": "-300px",
-        "image-2": "-200px"
+        "image-2y": "-220px",
+        "image-2x": "-175px"
       }
     }
   },
