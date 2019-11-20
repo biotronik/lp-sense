@@ -117,16 +117,3 @@ let scene1 = new ScrollMagic.Scene({
   .setTween(tl2)
   // .addIndicators()
   .addTo(controller);
-
-// Bobby Animation
-// let tl2 = new TimelineMax();
-// tl2.from("#image", 0.5, { opacity: 0, scale: 0 });
-// let scene1 = new ScrollMagic.Scene({
-//   triggerElement: "#bobby",
-//   triggerHook: 0.5,
-//   offset: 0,
-//   duration: 300
-// })
-//   .setTween(tl2)
-//   // .addIndicators()
-//   .addTo(controller);
