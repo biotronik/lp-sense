@@ -234,15 +234,39 @@
                 to share with your peers
               </h3>
 
+              <!-- Download Presentation Form -->
               <script src="//app-sj11.marketo.com/js/forms2/js/forms2.min.js"></script>
-              <form id="mktoForm_1712"></form>
+              <form id="mktoForm_1712" style="min-height: 303px"></form>
+              <div
+                id="downloadFormConfirmation"
+                style="display:none; min-height: 303px"
+                class="text-white"
+              >
+                <h1 class="pt-12 text-center font-bold">
+                  Thank you for your submission.
+                </h1>
+                <p class="mt-6 text-sm text-center">
+                  Please check your inbox for a download link.
+                </p>
+              </div>
               <script>
                 MktoForms2.loadForm(
                   "//app-sj11.marketo.com",
                   "947-QLI-617",
-                  1712
+                  1712,
+                  function(form) {
+                    form.onSuccess(function() {
+                      document.getElementById(
+                        "downloadFormConfirmation"
+                      ).style.display = "block";
+                      document.getElementById("mktoForm_1712").style.display =
+                        "none";
+                      return false;
+                    });
+                  }
                 );
               </script>
+              <!-- End of Download Presentation Form -->
             </div>
           </div>
         </div>
@@ -629,11 +653,39 @@
             Schedule a DX in-service today
           </h3>
 
+          <!-- Contact Us Form -->
           <script src="//app-sj11.marketo.com/js/forms2/js/forms2.min.js"></script>
-          <form id="mktoForm_1737"></form>
+          <form id="mktoForm_1737" style="min-height: 471px"></form>
+          <div
+            id="contactUsFormConfirmation"
+            style="display:none; min-height: 471px"
+            class="text-white"
+          >
+            <h1 class="pt-12 text-center font-bold">
+              Thank you for your submission.
+            </h1>
+            <p class="mt-6 text-sm text-center">
+              A BIOTRONIK representative will follow up with you shortly.
+            </p>
+          </div>
           <script>
-            MktoForms2.loadForm("//app-sj11.marketo.com", "947-QLI-617", 1737);
+            MktoForms2.loadForm(
+              "//app-sj11.marketo.com",
+              "947-QLI-617",
+              1737,
+              function(form) {
+                form.onSuccess(function() {
+                  document.getElementById(
+                    "contactUsFormConfirmation"
+                  ).style.display = "block";
+                  document.getElementById("mktoForm_1737").style.display =
+                    "none";
+                  return false;
+                });
+              }
+            );
           </script>
+          <!-- End of Contact Us Form -->
         </div>
       </div>
     </section>
